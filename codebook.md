@@ -85,3 +85,4 @@ The following measurements are used in this project. From the original raw data,
 [78] "fBodyBodyGyroJerkMag-std()"     
 [79] "fBodyBodyGyroJerkMag-meanFreq()"
 
+
