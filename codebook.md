@@ -4,6 +4,7 @@
 Measurements
 
 The following measurements are used in this project. From the original raw data, only average (mean) and standard deviation (std) are extracted.
+
  [1] "tBodyAcc-mean()-X"              
  [2] "tBodyAcc-mean()-Y"              
  [3] "tBodyAcc-mean()-Z"              
