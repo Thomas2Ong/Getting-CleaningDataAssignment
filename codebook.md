@@ -2,12 +2,14 @@
 
 Modifications
 
-This assignment modify the 
+This assignment modified the dataset in publications by Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
-
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-
+The following are the modications:
+1. Merging 30 subjects' training and testing data into one dataset.
+2. Extracting the average (mean) and standard deviation (std) measurements.
+3. Using "features.txt" to rename the column names of X dataset from serial (V1 to V561) to descriptive (eg. tBodyAcc-mean()-X) as in Measurements section below.
+4. Using "activity_labels.txt" to rename the column data of Y dataset from numeric (1 to 6) to descriptive (WALKING, WALKING-UPSTAIRS, WALKING-DOWNSTAIRS, SITTING, STANDING, LAYING).
+5. Create a tidy dataset with the average of variable of each subject's activity.
 
 
 Measurements
