@@ -1,5 +1,7 @@
 ## run_analysis.R
 
+
+library(dplyr)
 ## 1. Download data from web
 rawDatHTML <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 rawDatDir <- "./rawData"
@@ -63,12 +65,13 @@ allDat$Activity <- factor(allDat$Activity, levels=activityLabel[,1], labels=acti
 
 
 ## 8. Tidy data
+library(reshape2)
 meltedDat <- melt(allDat, id=c("Subject", "Activity"))
 tidyDat <- dcast(meltedDat, Subject+Activity ~ variable, mean)
 
 
 ## 9. Write table
-write.table(tidyData, "./tidy_data.txt", row.names=FALSE, quote=FALSE)
+write.table(tidyDat, "./tidy_data.txt", row.names=FALSE, quote=FALSE)
 
 
 
